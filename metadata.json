@@ -1,0 +1,6 @@
+{
+  "name": "Choco Rocks",
+  "description": "Crafting Sweet Experiences, One Chocolate at a Time. Handcrafted premium chocolates, customized corporate gifts, event packages, and custom chocolate creations with an interactive, elegant, and modern catalog.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
