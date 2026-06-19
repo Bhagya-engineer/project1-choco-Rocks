@@ -302,7 +302,7 @@ export default function Bhagi() {
       const distanceSim = (parsed % 22 + 2.5).toFixed(1);
       const minsSim = Math.round(parseFloat(distanceSim) * 2.2 + 8);
       const deliveryMethod = parseFloat(distanceSim) < 15 ? 'Bespoke Chilled Courier' : 'Refrigerated Cargo Logistics';
-      const freeShipping = parseFloat(distanceSim) < 25 ? 'FREE Shipping Promo Applied' : '$12.50 Courier Surcharge';
+      const freeShipping = parseFloat(distanceSim) < 25 ? 'FREE Shipping Promo Applied' : '₹1,000.00 Courier Surcharge';
 
       setRouteInfo({
         computed: true,

@@ -42,10 +42,10 @@ export default function CustomBoxBuilder({ onApplyConfig }: CustomBoxBuilderProp
   };
 
   // Pricing calculations
-  const sizePrices = { 4: 15.00, 9: 32.00, 16: 55.00 };
+  const sizePrices = { 4: 1250.00, 9: 2650.00, 16: 4550.00 };
   const basePrice = sizePrices[boxSize];
-  const packagingPremium = packagingId === 'royal-velvet' || packagingId === 'festive-holiday' ? 5.00 : 0.00;
-  const engravingFee = engravedNote.trim().length > 0 ? 8.00 : 0.00;
+  const packagingPremium = packagingId === 'royal-velvet' || packagingId === 'festive-holiday' ? 400.00 : 0.00;
+  const engravingFee = engravedNote.trim().length > 0 ? 650.00 : 0.00;
   const totalCost = basePrice + packagingPremium + engravingFee;
 
   const currentPackaging = PACKAGING_OPTIONS.find(p => p.id === packagingId);
@@ -64,9 +64,9 @@ export default function CustomBoxBuilder({ onApplyConfig }: CustomBoxBuilderProp
 - Flavors: ${flavorsText}
 - Packaging: ${currentPackaging?.name || packagingId}
 - Chocolate Custom Monogram Text: "${engravedNote || 'None'}"
-- Live Estimate: $${totalCost.toFixed(2)}`;
+- Live Estimate: ₹${totalCost.toFixed(2)}`;
 
-    onApplyConfig(summary, `$${totalCost.toFixed(2)}`);
+    onApplyConfig(summary, `₹${totalCost.toFixed(2)}`);
     setAppliedNotification(true);
     setTimeout(() => setAppliedNotification(false), 4000);
 
@@ -310,7 +310,7 @@ export default function CustomBoxBuilder({ onApplyConfig }: CustomBoxBuilderProp
                 className="w-full text-xs p-2.5 rounded-xl border border-choco-beige bg-white focus:outline-none focus:ring-1 focus:ring-choco-gold"
               />
               <p className="text-[9px] text-[#6D4C41] mt-1 italic">
-                Edible gold-tempered lettering molded on truffles (+$8.00 setup fee)
+                Edible gold-tempered lettering molded on truffles (+₹650.00 setup fee)
               </p>
             </div>
 
@@ -320,20 +320,20 @@ export default function CustomBoxBuilder({ onApplyConfig }: CustomBoxBuilderProp
               </span>
               <div className="flex justify-between text-xs text-[#6D4C41]">
                 <span>Box Base Cost ({boxSize} pcs):</span>
-                <span className="font-mono font-medium">${basePrice.toFixed(2)}</span>
+                <span className="font-mono font-medium">₹{basePrice.toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-xs text-[#6D4C41]">
                 <span>Packaging Premium:</span>
-                <span className="font-mono font-medium">${packagingPremium.toFixed(2)}</span>
+                <span className="font-mono font-medium">₹{packagingPremium.toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-xs text-[#6D4C41]">
                 <span>Lettering Option:</span>
-                <span className="font-mono font-medium">${engravingFee.toFixed(2)}</span>
+                <span className="font-mono font-medium">₹{engravingFee.toFixed(2)}</span>
               </div>
               <div className="border-t border-dashed border-choco-beige pt-3 flex justify-between items-baseline">
                 <span className="text-sm font-bold text-choco-dark">Estimated Total:</span>
                 <span className="text-2xl font-serif font-extrabold text-choco-dark text-right">
-                  ${totalCost.toFixed(2)}
+                  ₹{totalCost.toFixed(2)}
                 </span>
               </div>
             </div>

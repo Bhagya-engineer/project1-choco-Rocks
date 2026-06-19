@@ -96,7 +96,7 @@ export const PRODUCTS: ProductItem[] = [
     title: "Signatures Truffle Collection",
     category: "Luxury Chocolate Boxes",
     description: "An array of our 16 legendary handcrafted pralines featuring sea-salt caramel, golden hazelnut, raspberry ruby, and grand cru dark ganache.",
-    priceEstimate: "$45.00",
+    priceEstimate: "₹3,750.00",
     image: "https://files.catbox.moe/hlzaoz.png",
     tags: ["Signature", "Best Seller", "Artisan"]
   },
@@ -105,7 +105,7 @@ export const PRODUCTS: ProductItem[] = [
     title: "Executive Crest Gift Box",
     category: "Corporate Gift Packs",
     description: "https://files.catbox.moe/bxjlhs.jpg",
-    priceEstimate: "$65.00",
+    priceEstimate: "₹5,400.00",
     image: CORPORE_BOX_IMAGE,
     tags: ["Corporate", "Custom Logo", "Bespoke"]
   },
@@ -114,7 +114,7 @@ export const PRODUCTS: ProductItem[] = [
     title: "Amour Pearl Favor Trays",
     category: "Wedding Favors",
     description: "Dainty dual-piece custom drawers wrapped with silk golden ropes, containing rose-infused ivory ganaches customized with couple initials.",
-    priceEstimate: "$6.50 / unit",
+    priceEstimate: "₹540.00 / unit",
     image: "https://files.catbox.moe/0xvz2b.jpg",
     tags: ["Wedding", "Pearls", "Monogram"]
   },
@@ -123,7 +123,7 @@ export const PRODUCTS: ProductItem[] = [
     title: "Choco Rocks Customized Lettering Blocks",
     category: "Customized Chocolates",
     description: "Spell out names, heartfelt greetings, or corporate motifs in premium solid white, milk, and dark Swiss chocolate blocks.",
-    priceEstimate: "$25.00",
+    priceEstimate: "₹2,100.00",
     image: "https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&q=80&w=600",
     tags: ["Customized", "Solid Chocolate", "Letters"]
   },
@@ -132,7 +132,7 @@ export const PRODUCTS: ProductItem[] = [
     title: "Noël Golden Harvest Set",
     category: "Festive Collections",
     description: "Holiday-themed spiced truffles, cinnamon dark logs, and gold-dusted chocolate pinecones in an elegant collector box.",
-    priceEstimate: "$38.00",
+    priceEstimate: "₹3,150.00",
     image: "https://files.catbox.moe/ljvec9.jpg",
     tags: ["Festive", "Gold Dusted", "Holiday"]
   },
@@ -141,9 +141,18 @@ export const PRODUCTS: ProductItem[] = [
     title: "Imperia Gourmet Chocolate Hamper",
     category: "Premium Chocolate Hampers",
     description: "The peak of grand gifting: containing 2 full truffle boxes, chocolate dragées, organic hazelnut spread, hot chocolate stirrer sticks, and fine cookies.",
-    priceEstimate: "$120.00",
+    priceEstimate: "₹9,950.00",
     image: "https://files.catbox.moe/l7l2i2.jpg",
     tags: ["Hamper", "Luxury", "Ultimate Gift"]
+  },
+  {
+  id: "prod-7",
+  title: "Handcrafted Geometric Chocolate Slab",
+  category: "Artisan Chocolates",
+  description: "Beautifully handcrafted artisan chocolate slab featuring an elegant geometric design crafted with rich dark, milk, and white chocolates. Each piece is carefully molded with unique textures and patterns, making it a luxurious gift for weddings, celebrations, and premium hampers.",
+  priceEstimate: "₹450.00 / unit",
+  image: "https://files.catbox.moe/7zhbut.jpg",
+  tags: ["Handcrafted", "Artisan Chocolate", "Luxury Gift", "Premium", "Gourmet"]
   }
 ];
 
